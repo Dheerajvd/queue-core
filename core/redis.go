@@ -21,3 +21,7 @@ func InitRedis(addr, password string, db int) error {
 
 	return RedisClient.Ping(ctx).Err()
 }
+
+func InitRedisClient(redisClient *redis.Client) {
+	RedisClient = redisClient
+}
