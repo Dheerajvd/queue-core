@@ -3,13 +3,13 @@ package types
 import "time"
 
 type Job struct {
-	ID         string
-	Type       string
-	ClientID   string
-	Payload    any
-	RetryCount int
-	Scheduled  time.Time
-	UniqueKey  string
+	ID         string    `json:"id"`
+	Type       string    `json:"type"`
+	ClientID   string    `json:"client_id"`
+	Payload    any       `json:"payload"`
+	RetryCount int       `json:"retry_count"`
+	Scheduled  time.Time `json:"scheduled"`
+	UniqueKey  string    `json:"unique_key"`
 }
 
 type JobOption func(*Job)
