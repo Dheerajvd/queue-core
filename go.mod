@@ -1,4 +1,4 @@
-module queue-core
+module github.com/Dheerajvd/queue-core
 
 go 1.20
 

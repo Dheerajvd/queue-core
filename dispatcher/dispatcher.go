@@ -3,8 +3,7 @@ package dispatcher
 import (
 	"context"
 
-	"queue-core/types"
-
+	"github.com/Dheerajvd/queue-core/types"
 	"github.com/google/uuid"
 )
 

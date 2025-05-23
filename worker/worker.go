@@ -2,8 +2,9 @@ package worker
 
 import (
 	"context"
-	"queue-core/types"
 	"time"
+
+	"github.com/Dheerajvd/queue-core/types"
 )
 
 type Worker struct {
