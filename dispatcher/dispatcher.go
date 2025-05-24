@@ -50,5 +50,6 @@ func PushJob(ctx context.Context, queueName, jobType, clientID string, payload a
 	}
 
 	// Push to main queue list
-	return job.ID, core.RedisClient.RPush(ctx, queueName, data).Err()
+	zsetKey := "processing:" + queueName
+	return job.ID, core.RedisClient.RPush(ctx, zsetKey, data).Err()
 }

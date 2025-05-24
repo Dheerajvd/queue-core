@@ -22,11 +22,11 @@ git push
 
 ## Git Tagging
 ```bash
-git tag v0.1.8
-git push origin v0.1.8
+git tag v0.1.9
+git push origin v0.1.9
 ```
 
 Note: Increase the above counter after each push
 
 ## T0 Fetch in services
-go get github.com/Dheerajvd/queue-core@v0.1.8
+go get github.com/Dheerajvd/queue-core@v0.1.9
