@@ -20,7 +20,7 @@ type Worker struct {
 func NewWorker(queueName string, handler func(context.Context, types.Job) error, opts types.WorkerOptions) *Worker {
 	return &Worker{
 		QueueName:           queueName,
-		ProcessingQueueName: "processing:" + queueName,
+		ProcessingQueueName: queueName,
 		Handler:             handler,
 		Options:             opts,
 	}
